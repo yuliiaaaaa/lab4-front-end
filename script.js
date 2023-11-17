@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //firstTask
  const thirdElement = document.getElementById('third-element');
+ const nextElement = document.querySelector('h3');
     let isColorChanged = false;
 
     function changeColor(element) {
@@ -54,5 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
     thirdElement.addEventListener('click', function () {
         changeColor(thirdElement);
     });
+     nextElement.addEventListener("click", function () {
+       changeColor(nextElement);
+     });
 });
 
